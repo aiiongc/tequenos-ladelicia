@@ -4,7 +4,7 @@ const productos= [
         nombre: "Promoción 10 cajas clásicas",
         artista: "12 unidades",
         precio: 45000,
-        img: "./assets/img/tequenos12unidades.jpg",
+        img: "../assets/img/tequenos12unidades.jpg",
     },
     {   
         id: 2,
