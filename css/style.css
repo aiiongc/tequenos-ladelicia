@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+main{
+    padding-top: 9.375rem;
+}
 h1{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.875rem;
@@ -51,8 +54,12 @@ body{
     background-color: white;
 }
 
+.logo{
+    display: flex;
+}
 .logo>img{
-    width: 300px;
+    width: 9.375rem;
+    margin-left: 50px;
 }
 
 .tiendaCard{
@@ -105,17 +112,12 @@ body{
     color: white;
 }
 
-.navbar img{
-    width: 60px;
-    cursor: pointer;
-}
 
 .navbar{
     display: flex;
-    justify-content: end;
     margin-right: 15%;
     padding-top: 70px;
-    padding-bottom: 1.5625rem;
+
 }
 
 .precio{
@@ -216,12 +218,15 @@ body{
 }
 
 .contador-carrito{
+    display: flex;
+    font-size: 15px;
     text-align: center;
     color: white;
     background-color: red;
     border-radius: 50%;
     height: 20px;
     width: 20px;
+    position: fixed;
 }
 
 footer{
@@ -237,4 +242,112 @@ footer{
 }
 .productImg{
     width: 18.75rem;
+}
+
+.carritoImg>img{
+    width: 3.125rem;
+    cursor: pointer;
+}
+
+.navbar-buttons{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none;
+    gap: 1.875rem;
+    margin-right: 50px;
+    font-size: 1.25rem;
+    background-color: white;
+    padding-top: 30px;
+
+}
+.navbar-buttons li a{
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+}
+.tequenos-main{
+    display: flex;
+    background-color:#fecb00;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.tequenos-imagen{
+    width: 500px;
+}
+
+.descubre-sabor{
+    margin-top: 50px;
+    width: 37.5rem;
+    height: 25rem;
+}
+.tequenos-historia{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.tequeños-imagen-historia{
+    width: 300px;
+    height: 300px;
+}
+
+.historia-texto{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 600px;
+    font-size: 1.375rem;
+    text-align: justify;
+}
+
+.titulo-historia{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+}
+.contenedor-tequenos{
+    display: flex;
+    flex-direction: column;
+}
+.tequenos-sabor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #fecb00;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.titulo-sabor{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+}
+.sabor-texto{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 600px;
+    font-size: 1.375rem;
+    text-align: justify;
+}
+.variedades{
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+    gap: 3.125rem;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: center;
 }
