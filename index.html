@@ -22,7 +22,6 @@
 
         <nav class="navbar">
             <ul class="navbar-buttons">
-                <li><a href="">MAIN</a></li>
                 <li><a href="">Historia</a></li>
                 <li><a href="">Sabor</a></li>
                 <li><a href="">Nosotros</a></li>
@@ -38,8 +37,13 @@
     <main>
     <section class="fondo-queso"></section>
     <section class="tequenos-main">
-        <img class="tequenos-imagen" src="./assets/img/logo.png" alt="">
-        <img class="descubre-sabor" src="./assets/img/imagen.png" alt="">
+        <div>
+            <img class="tequenos-imagen" src="./assets/img/logo.png" alt="">
+            <button>
+                Pide tus tequeños
+            </button>
+        </div>
+        <img class="descubre-sabor" src="./assets/img/descubreelsabor.png" alt="">
     </section>
     <section class="fondo-queso"></section>
     <section class="tequenos-historia">
@@ -77,12 +81,15 @@
     </section>
     
     <section class="nosotros">
-        <h4>Sobre <br>Nosotros</h4>
+        <h4>Sobre Nosotros</h4>
         <iframe src="https://drive.google.com/file/d/12QTZJsk8URGBL9lwUs6wlcoCEoxzxhkt/preview" width="640" height="480" allow="autoplay"></iframe>
     </section>
     
     <section class="clientes">
         <h4>Qué dicen nuestros <br> clientes</h4>
+        <section class="card-clientes">
+            <div id="contenidoClientes" class="contenidoClientes"></div>
+        </section>
     </section>
 
     <section class="contacto">
@@ -99,6 +106,7 @@
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 <script src="./js/productos.js"></script>
+<script src="./js/clientes.js"></script>
 <script src="./js/carrito.js"></script>
 <script src="./js/app.js"></script>
 </body>
