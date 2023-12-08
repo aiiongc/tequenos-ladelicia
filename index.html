@@ -15,38 +15,51 @@
 
 </head>
 <body>
+<!-- HEADER -->
     <header>
         <div class="logo">
-            <img src="./assets/img/logo.png" alt="">
+            <img src="./assets/img/tequenos-logo-simple.png" alt="">
         </div>
 
+
+    <!-- NAVBAR -->
         <nav class="navbar">
             <ul class="navbar-buttons">
-                <li><a href="">Historia</a></li>
-                <li><a href="">Sabor</a></li>
-                <li><a href="">Nosotros</a></li>
-                <li><a href="">Clientes</a></li>
-                <li><a href="">Contacto</a></li>
+                <li><a href="#inicio" class="active">Inicio</a></li>
+                <li><a href="#historia">Historia</a></li>
+                <li><a href="#sabor">Sabor</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#clientes">Clientes</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
+            <div class="carritoImg">
+                <img id="activarCarrito" src="./assets/img/carrito.png">
+                <div id="contadorCarrito" class="contador-carrito"></div>
+            </div>
         </nav>
-        <div class="carritoImg">
-            <img id="activarCarrito" src="./assets/img/carrito.png">
-            <div id="contadorCarrito" class="contador-carrito"></div>
-        </div>
+
+
     </header>
     <main>
-    <section class="fondo-queso"></section>
-    <section class="tequenos-main">
-        <div>
+
+<!-- INICIO -->
+    <section id="inicio" class="tequenos-main">
+        <section class="fondo-queso"></section>
+        <section class="contenedor-main">
+        <div class="contenedor-button">
             <img class="tequenos-imagen" src="./assets/img/logo.png" alt="">
             <button>
                 Pide tus tequeños
             </button>
         </div>
         <img class="descubre-sabor" src="./assets/img/descubreelsabor.png" alt="">
+        </section>
+        <section class="fondo-queso"></section>
     </section>
-    <section class="fondo-queso"></section>
-    <section class="tequenos-historia">
+
+
+<!-- HISTORIA -->
+    <section id="historia" class="tequenos-historia">
         <div class="contenedor-tequenos">
         <h4>Un poco de <br> historia<h4>
         <img class="tequeños-imagen-historia" src="./assets/img/tequenos-imagen-historia.JPG" alt="">
@@ -59,7 +72,9 @@
         </p>
     </section>
 
-    <section class="tequenos-sabor">
+
+<!-- SABOR -->
+    <section id="sabor" class="tequenos-sabor">
     <div class="texto-sabor">
     <h4>Sabor <br> clásico</h4>
     <p class="sabor-texto">La preparación de los tequeños se mantiene con la misma receta clásica venezolana, mezclando la harina de trigo con huevo y mantequilla, agua y sal. Agregamos el tradicional queso de mano venezolano rellenando y le damos la tradicional forma, listos para freir y servir. <br>
@@ -71,7 +86,9 @@
     <img class="tequeños-imagen-sabor" src="./assets/img/tequenos-sabor.jpeg" alt=""></img>
     </section>
 
-    <section class="variedades">
+
+<!-- VARIEDADES -->
+    <section id="variedades" class="variedades">
         <h4>Conoce nuestras <br> variedades</h4>
         <div>
         <img class="tequeños-imagen-historia" src="./assets/img/tequenos-imagen-historia.JPG" alt="">
@@ -79,23 +96,30 @@
         <img class="tequeños-imagen-historia" src="./assets/img/tequenos-imagen-historia.JPG" alt="">
         </div>
     </section>
-    
-    <section class="nosotros">
+
+
+<!-- NOSOTROS -->
+    <section id="nosotros" class="nosotros">
         <h4>Sobre Nosotros</h4>
         <iframe src="https://drive.google.com/file/d/12QTZJsk8URGBL9lwUs6wlcoCEoxzxhkt/preview" width="640" height="480" allow="autoplay"></iframe>
     </section>
-    
-    <section class="clientes">
+<!---------------------------->
+
+<!--CLIENTES-->
+    <section id="clientes" class="clientes">
         <h4>Qué dicen nuestros <br> clientes</h4>
         <section class="card-clientes">
             <div id="contenidoClientes" class="contenidoClientes"></div>
         </section>
     </section>
+<!--------------------------->
 
-    <section class="contacto">
+<!-- CONTACTO -->
+    <section id="contacto" class="contacto">
         <h4>Dónde encontrarnos</h4>
         
     </section>
+<!----------------------------->
 
         <div id="contenidoTienda" class="contenido-tienda"></div>
         <div id="carritoContenedor" class="carrito-contenedor"></div>
@@ -109,5 +133,6 @@
 <script src="./js/clientes.js"></script>
 <script src="./js/carrito.js"></script>
 <script src="./js/app.js"></script>
+<script src="./js/clientesapp.js"></script>
 </body>
 </html>

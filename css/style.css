@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 @font-face {
@@ -10,8 +11,10 @@
 }
 
 main{
-    padding-top: 9.375rem;
+padding-top: 100px;
 }
+
+/* Títulos */
 h1{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.875rem;
@@ -48,25 +51,11 @@ h6{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.25rem;
 }
-.comision{
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: .9375rem;
-    text-align: center;
-    margin-top: 30px;
-}
+/* ........................................................................................................... */
+
 body{
     background-color: white;
 }
-
-.logo{
-    display: flex;
-}
-.logo>img{
-    width: 9.375rem;
-    margin-left: 50px;
-}
-
 .tiendaCard{
     display: flex;
     flex-direction: column;
@@ -115,14 +104,6 @@ body{
 .vaciar-btn:hover{
     background-color: orange;
     color: white;
-}
-
-
-.navbar{
-    display: flex;
-    margin-right: 15%;
-    padding-top: 70px;
-
 }
 
 .precio{
@@ -222,17 +203,7 @@ body{
     padding-bottom: .625rem;
 }
 
-.contador-carrito{
-    display: flex;
-    font-size: 15px;
-    text-align: center;
-    color: white;
-    background-color: red;
-    border-radius: 50%;
-    height: 20px;
-    width: 20px;
-    position: fixed;
-}
+
 
 footer{
     background-color: #fecb00;
@@ -249,11 +220,34 @@ footer{
     width: 18.75rem;
 }
 
-.carritoImg>img{
-    width: 3.125rem;
-    cursor: pointer;
+/* HEADER */
+header{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-height: 100px;
+    margin-bottom: 100px;
+    z-index: 100;
 }
-
+.navbar{
+    display: flex;
+    margin-right: 15%;
+    margin-top: 40px;
+}
+.navbar-buttons li a{
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav>ul>li>a:hover,
+nav>ul>li>a.active{
+    color: #fabc13;
+}
 .navbar-buttons{
     display: flex;
     flex-direction: row;
@@ -264,41 +258,64 @@ footer{
     font-size: 1.25rem;
     background-color: white;
     padding-top: 30px;
-
 }
-.navbar-buttons li a{
-    text-decoration: none;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-header{
-    background-color: white;
-    width: 100%;
+.logo{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    position: fixed;
 }
+.logo>img{
+    margin-top: 10px;
+    max-height: 80px;
+    margin-left: 50px;
+}
+.carritoImg>img{
+    width: 3.125rem;
+    cursor: pointer;
+}
+.contador-carrito{
+    display: flex;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    position: fixed;
+    margin-top: -65px;
+    margin-left: 45px;
+
+}
+/* ....................................................................................... */
+
+/* INICIO */
 .tequenos-main{
     display: flex;
     background-color:#fabc13;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: baseline;
+    min-height: 76vh;
+    padding-top: 90px;
 }
 
-.tequenos-main>div{
+.contenedor-button{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.tequenos-main>div>button{
+.tequenos-main>section>div>button{
     font-weight: bold;
     background-color: white;
     width: 150px;
     height: 50px;
     border: none;
+}
+.contenedor-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 76vh;
 }
 
 .tequenos-imagen{
@@ -306,7 +323,6 @@ header{
 }
 
 .descubre-sabor{
-    margin-top: 50px;
     width: 37.5rem;
     height: 25rem;
 }
@@ -318,13 +334,24 @@ header{
     padding-top: 30px;
     padding-bottom: 30px;
 }
+.fondo-queso{
+    width: 100%;
+    min-height: 60px;
+    background-image: url(../assets/img/fondo-amarillo.png);
+    background-repeat: repeat;
+    background-size: 10%;
+}
+/* ............................................................. */
 
+/* HISTORIA */
+.tequenos-historia{
+    min-height: 100vh;
+    padding-top: 120px;
+}
 .tequeños-imagen-historia{
     width: 300px;
     height: 300px;
-
 }
-
 .historia-texto{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -332,12 +359,14 @@ header{
     font-size: 1.375rem;
     text-align: justify;
 }
-
-
 .contenedor-tequenos{
     display: flex;
     flex-direction: column;
 }
+/* ................................................ */
+
+
+/* SABOR */
 .tequenos-sabor{
     display: flex;
     flex-direction: row;
@@ -345,6 +374,8 @@ header{
     background-color: #fabc13;
     padding-top: 30px;
     padding-bottom: 30px;
+    min-height: 100vh;
+    padding-top: 120px;
 }
 
 .sabor-texto{
@@ -355,6 +386,18 @@ header{
     font-size: 1.375rem;
     text-align: justify;
 }
+.tequeños-imagen-sabor{
+    margin-top: 3.125rem;
+    width: 500px;
+    height: 100%;
+    border: #fcd873;
+    border-style: solid;
+    border-width: 13px;
+    border-radius: 10px;
+}
+/* ............................... */
+
+/* VARIEDADES */
 .variedades{
     display: flex;
     flex-direction: column;
@@ -364,6 +407,8 @@ header{
     padding-bottom: 30px;
     padding-left: 10%;
     padding-right: 10%;
+    min-height: 100vh;
+    padding-top: 120px;
 }
 .variedades>div{
     display: flex;
@@ -379,24 +424,9 @@ header{
     border-width: 10px;
     border-radius: 10px;
 }
+/* .................................... */
 
-.tequeños-imagen-sabor{
-    margin-top: 3.125rem;
-    width: 500px;
-    height: 100%;
-    border: #fcd873;
-    border-style: solid;
-    border-width: 13px;
-    border-radius: 10px;
-}
-.fondo-queso{
-    width: 100%;
-    height: 60px;
-    background-image: url(../assets/img/fondo-amarillo.png);
-    background-repeat: repeat;
-    background-size: 200px;
-}
-
+/* NOSOTROS */
 .nosotros{
     background-image: url(../assets/img/Nosotros-fondo.png);
     background-size: cover;
@@ -407,23 +437,23 @@ header{
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 1.5625rem;
+    min-height: 100vh;
+    padding-top: 120px;
 }
 .nosotros>iframe{
     margin-top: 50px;
     margin-bottom: 100px;
     
 }
-
-.contacto{
-    background-color:#fabc13;
-    padding-left: 10%;
-}
+/* .................... */
 
 /* Clientes */
 .clientes{
     background-image: url(../assets/img/clientes-bg.jpg);
     padding-left: 10%;
     background-size: cover;
+    min-height: 100vh;
+    padding-top: 120px;
 }
 
 .rating{
@@ -468,4 +498,13 @@ header{
 }
 .card-clientes{
     margin-top: 9.375rem;
+}
+/* ............................... */
+
+/* CONTACTO */
+.contacto{
+    background-color:#fabc13;
+    padding-left: 10%;
+    min-height: 100vh;
+    padding-top: 120px;
 }

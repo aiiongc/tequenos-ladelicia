@@ -8,18 +8,6 @@ const toastBtn = document.querySelector("#toastify")
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 
-clientes.forEach((clientes)=> {
-    let clientesCard = document.createElement("div");
-    clientesCard.className = "cardClientes"
-    clientesCard.innerHTML = `
-    <img class="clientes-img" src="${clientes.img}">
-    <p class="titulo-clientes">${clientes.nombre}</p>
-    <p class="clientes-descripcion">${clientes.descripcion}<p>
-    <img class="rating" src="${clientes.stars}">
-    `;
-
-    contenidoClientes.append(clientesCard)});
-
 // Generador de productos en tienda
     productos.forEach((album)=> {
         let contenido = document.createElement("div");
@@ -67,3 +55,23 @@ const almacenamientoLocal = () => {
 localStorage.setItem("carrito", JSON.stringify(carrito));
 };
 carritoContador();
+
+
+// SCROLL A SECCIONES
+let sections = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('header nav ul li a');
+window.onscroll = () => {
+    sections.forEach(sec => {
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 100;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id');
+        
+        if(top >= offset && top < offset + height) {
+            navLinks.forEach(links => {
+                links.classList.remove('active');
+                document.querySelector('header nav ul li a[href*=' + id + ']').classList.add('active');
+            });
+        };
+    });
+};
