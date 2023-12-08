@@ -20,8 +20,6 @@
         <div class="logo">
             <img src="./assets/img/tequenos-logo-simple.png" alt="">
         </div>
-
-
     <!-- NAVBAR -->
         <nav class="navbar">
             <ul class="navbar-buttons">
@@ -33,12 +31,10 @@
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
             <div class="carritoImg">
-                <img id="activarCarrito" src="./assets/img/carrito.png">
+                <img id="activarCarrito" src="../assets/img/carrito.png">
                 <div id="contadorCarrito" class="contador-carrito"></div>
             </div>
         </nav>
-
-
     </header>
     <main>
 
@@ -48,9 +44,11 @@
         <section class="contenedor-main">
         <div class="contenedor-button">
             <img class="tequenos-imagen" src="./assets/img/logo.png" alt="">
-            <button>
-                Pide tus tequeños
-            </button>
+            <a href="./pages/productos.html">
+                <button>
+                    Pide tus tequeños
+                </button>
+            </a>
         </div>
         <img class="descubre-sabor" src="./assets/img/descubreelsabor.png" alt="">
         </section>
@@ -76,7 +74,7 @@
 <!-- SABOR -->
     <section id="sabor" class="tequenos-sabor">
     <div class="texto-sabor">
-    <h4>Sabor <br> clásico</h4>
+    <h4>Sabor clásico</h4>
     <p class="sabor-texto">La preparación de los tequeños se mantiene con la misma receta clásica venezolana, mezclando la harina de trigo con huevo y mantequilla, agua y sal. Agregamos el tradicional queso de mano venezolano rellenando y le damos la tradicional forma, listos para freir y servir. <br>
         <br>
         Tenemos formatos a elección, desde 12 unidades por caja, para asegurar el disfrute de nuestros clientes. También puedes probar nuestras variedades de mechada, burguer, pizza, yoyo (plátano y jamón) y premium con 35 gramos de queso. <br>
@@ -107,7 +105,7 @@
 
 <!--CLIENTES-->
     <section id="clientes" class="clientes">
-        <h4>Qué dicen nuestros <br> clientes</h4>
+        <h4>Qué dicen nuestros clientes</h4>
         <section class="card-clientes">
             <div id="contenidoClientes" class="contenidoClientes"></div>
         </section>
@@ -117,12 +115,19 @@
 <!-- CONTACTO -->
     <section id="contacto" class="contacto">
         <h4>Dónde encontrarnos</h4>
-        
+        <section class="despacho">
+            <p>Despacho</p>
+            <p>Delivery</p>
+        </section>
+        <section class="contactanos" >
+            <p>Contáctanos</p>
+            <div class="redes-sociales">
+                <img width="50px" height="50px" src="./assets/img/whatsapp.png" alt="">
+                <img width="50px" height="50px" src="./assets/img/instagram.png" alt="">
+            </div>
+        </section>
     </section>
 <!----------------------------->
-
-        <div id="contenidoTienda" class="contenido-tienda"></div>
-        <div id="carritoContenedor" class="carrito-contenedor"></div>
     </main>
     <footer>
         <h5>Pagina en construccion</h5>
