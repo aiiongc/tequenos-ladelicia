@@ -342,7 +342,7 @@ nav>ul>li>a.active{
 
 .descubre-sabor{
     margin-top: 4%;
-    width: 43.75rem;
+    width: auto;
     height: 31.25rem;
 }
 .tequenos-historia{
@@ -367,7 +367,7 @@ nav>ul>li>a.active{
     min-height: 100vh;
     padding-top: 120px;
 }
-.tequeños-imagen-historia{
+.tequenos-imagen-historia{
     margin-top: -2.5rem;
     width: 400px;
     height: 400px;
@@ -390,11 +390,13 @@ nav>ul>li>a.active{
 
 
 /* SABOR */
+.sabor-box{
+    background-color:#fabc13;
+}
 .tequenos-sabor{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: #fabc13;
     padding-top: 30px;
     padding-bottom: 30px;
     min-height: 100vh;
@@ -402,6 +404,7 @@ nav>ul>li>a.active{
 }
 .texto-sabor{
     margin-top: 1.5625rem;
+    text-align: justify;
 }
 .sabor-texto{
     color: black;
@@ -412,7 +415,7 @@ nav>ul>li>a.active{
     text-align: justify;
     margin-top: 4.375rem;
 }
-.tequeños-imagen-sabor{
+.tequenos-imagen-sabor{
     margin-top: 14.375rem;
     width: 550px;
     height: 100%;
@@ -575,4 +578,59 @@ nav>ul>li>a.active{
 .tienda>h4{
     text-align: center;
     margin-bottom: 4.6875rem;
+}
+
+/* MEDIA QUERIES */
+@media (max-width:1024px){
+    h4{
+        margin-top: 1.25rem;
+        font-size: 4.6875rem;
+        text-align: center;
+    }
+    header{
+        max-width: 1024px;
+    }
+    .tequenos-imagen{
+        max-width: 21.875rem;
+    }
+    .descubre-sabor{
+        margin: 10% 0;
+        max-width: auto;
+        max-height: 300px;
+    }
+    .tequenos-historia{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+    }
+    .tequenos-imagen-historia{
+        width: auto;
+        min-height: 250px;
+        margin-top: 0;
+    }
+    .historia-texto{
+        font-size: 1.25rem;
+        margin: 0 0 0 0
+    }
+    .tequenos-box{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        min-height: 100vh;
+    }
+    .tequenos-sabor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px 0 5% 0 ;
+        margin: 0 5% 0% 5%;
+    }
+    .tequenos-imagen-sabor{
+        margin: 1.875rem 0 0 0;
+    }
+    .sabor-texto{
+        margin: 1.5625rem 0% 0% 0%;
+        width: 100%;
+    }
 }
