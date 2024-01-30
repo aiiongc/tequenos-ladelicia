@@ -18,17 +18,15 @@
 <!-- HEADER -->
     <header>
         <div class="logo">
-            <img src="./assets/img/tequenos-logo-simple.png" alt="">
+            <a href="#inicio"><img src="./assets/img/tequenos-logo-simple.png" alt=""></a>
         </div>
     <!-- NAVBAR -->
         <nav class="navbar">
             <ul class="navbar-buttons">
-                <li><a href="#inicio" class="active">Inicio</a></li>
                 <li><a href="#historia">Historia</a></li>
                 <li><a href="#sabor">Sabor</a></li>
                 <li><a href="#nosotros">Nosotros</a></li>
                 <li><a href="#clientes">Clientes</a></li>
-                <li><a href="#contacto">Contacto</a></li>
             </ul>
             <div class="carritoImg">
                 <img id="activarCarrito" src="./assets/img/carrito.png">
@@ -40,7 +38,6 @@
 
 <!-- INICIO -->
     <section id="inicio" class="tequenos-main">
-        <section class="fondo-queso"></section>
         <section class="contenedor-main">
         <div class="contenedor-button">
             <img class="tequenos-imagen" src="./assets/img/logo.png" alt="">
@@ -52,7 +49,6 @@
         </div>
         <img class="descubre-sabor" src="./assets/img/descubreelsabor.png" alt="">
         </section>
-        <section class="fondo-queso"></section>
     </section>
 
 
@@ -72,8 +68,8 @@
 
 
 <!-- SABOR -->
-<section class="sabor-box">
-    <section id="sabor" class="tequenos-sabor">
+<section id="sabor" class="sabor-box">
+    <section class="tequenos-sabor">
     <div class="texto-sabor">
     <h4>Sabor clásico</h4>
     <p class="sabor-texto">La preparación de los tequeños se mantiene con la misma receta clásica venezolana, mezclando la harina de trigo con huevo y mantequilla, agua y sal. Agregamos el tradicional queso de mano venezolano rellenando y le damos la tradicional forma, listos para freir y servir. <br>
@@ -101,7 +97,7 @@
 <!-- NOSOTROS -->
     <section id="nosotros" class="nosotros">
         <h4>Sobre Nosotros</h4>
-        <iframe src="https://drive.google.com/file/d/12QTZJsk8URGBL9lwUs6wlcoCEoxzxhkt/preview" width="640" height="480" allow="autoplay"></iframe>
+        <iframe class="video-nosotros" src="https://drive.google.com/file/d/12QTZJsk8URGBL9lwUs6wlcoCEoxzxhkt/preview" allow="autoplay"></iframe>
     </section>
 <!---------------------------->
 
@@ -115,24 +111,20 @@
 <!--------------------------->
 
 <!-- CONTACTO -->
-    <section id="contacto" class="contacto">
-        <h4>Dónde encontrarnos</h4>
-        <section class="despacho">
-            <p>Despacho</p>
-            <p>Delivery</p>
-        </section>
-        <section class="contactanos" >
-            <p>Contáctanos</p>
-            <div class="redes-sociales">
-                <img width="50px" height="50px" src="./assets/img/whatsapp.png" alt="">
-                <img width="50px" height="50px" src="./assets/img/instagram.png" alt="">
-            </div>
-        </section>
-    </section>
+
 <!----------------------------->
     </main>
     <footer>
-        <h5>Pagina en construccion</h5>
+        <section id="contacto" class="contacto">
+            <h4>Dónde encontrarnos</h4>
+            <section class="contactanos" >
+                <p>Contáctanos</p>
+                <div class="redes-sociales">
+                    <img width="50px" height="50px" src="./assets/img/whatsapp.png" alt="">
+                    <img width="50px" height="50px" src="./assets/img/instagram.png" alt="">
+                </div>
+            </section>
+        </section>
     </footer>
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>

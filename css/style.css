@@ -11,10 +11,6 @@
     src: url("../assets/fonts/rocky.ttf");
 }
 
-main{
-padding-top: 100px;
-}
-
 /* Títulos */
 h1{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -206,8 +202,6 @@ body{
     padding-bottom: .625rem;
 }
 
-
-
 footer{
     background-color: #fecb00;
     width: 100%;
@@ -246,10 +240,11 @@ header{
     text-decoration: none;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 nav>ul>li>a:hover,
 nav>ul>li>a.active{
-    color: #fabc13;
+    color: red;
 }
 .navbar-buttons{
     display: flex;
@@ -266,14 +261,16 @@ nav>ul>li>a.active{
 .logo{
     display: flex;
 }
-.logo>img{
+.logo>a>img{
+    cursor: pointer;
     margin-top: 10px;
     max-height: 80px;
     margin-left: 50px;
 }
 .carritoImg>img{
-    width: 3.125rem;
+    width: 2.5rem;
     cursor: pointer;
+    margin-top: .625rem;
 }
 .contador-carrito{
     display: flex;
@@ -282,11 +279,11 @@ nav>ul>li>a.active{
     color: white;
     background-color: red;
     border-radius: 50%;
-    height: 20px;
-    width: 20px;
+    height: 15px;
+    width: 15px;
     position: fixed;
-    margin-top: -65px;
-    margin-left: 45px;
+    margin-top: -50px;
+    margin-left: 40px;
 
 }
 /* ....................................................................................... */
@@ -294,16 +291,18 @@ nav>ul>li>a.active{
 /* INICIO */
 .tequenos-main{
     display: flex;
-    background-color:#fabc13;
     flex-direction: column;
-    align-items: center;
-    max-height: 100vh;
-    padding-top: 95px;
-    margin-top:  -100px;
+    justify-content: center;
+    min-height: 90vh;
+    background:
+    url(../assets/img/fondo-amarillo.png) bottom repeat-x,
+    url(../assets/img/fondo-amarillo.png) top repeat-x
+    #fabc13;
+    background-size: 200px;
+    margin-top: 100px;
 }
 
 .contenedor-button{
-    margin-top: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -333,7 +332,6 @@ nav>ul>li>a.active{
     flex-direction: row;
     justify-content: space-evenly;
     width: 100%;
-    height: 100vh;
 }
 
 .tequenos-imagen{
@@ -341,29 +339,20 @@ nav>ul>li>a.active{
 }
 
 .descubre-sabor{
-    margin-top: 4%;
+    margin-top: -3.125rem;
     width: auto;
     height: 31.25rem;
 }
+
+/* ............................................................. */
+
+/* HISTORIA */
 .tequenos-historia{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     background-color: black;
-    padding-top: 30px;
     padding-bottom: 30px;
-}
-.fondo-queso{
-    width: 100%;
-    min-height: 70px;
-    background-image: url(../assets/img/fondo-amarillo.png);
-    background-repeat: repeat;
-    background-size: 14.0625rem;
-}
-/* ............................................................. */
-
-/* HISTORIA */
-.tequenos-historia{
     min-height: 100vh;
     padding-top: 120px;
 }
@@ -462,16 +451,19 @@ nav>ul>li>a.active{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-left: 10%;
     padding-right: 10%;
-    padding-top: 1.5625rem;
     min-height: 100vh;
-    padding-top: 120px;
+}
+.nosotros>h4{
+    margin-top: 15%;
 }
 .nosotros>iframe{
-    margin-top: 50px;
-    margin-bottom: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 90%;
+    height: 400px;
     
 }
 /* .................... */
@@ -543,7 +535,6 @@ nav>ul>li>a.active{
 .contacto{
     background-color:#fabc13;
     padding-left: 10%;
-    min-height: 100vh;
     padding-top: 120px;
 }
 .despacho{
@@ -594,7 +585,7 @@ nav>ul>li>a.active{
         max-width: 21.875rem;
     }
     .descubre-sabor{
-        margin: 10% 0;
+        margin: 10% 0 0 0;
         max-width: auto;
         max-height: 300px;
     }
@@ -632,5 +623,123 @@ nav>ul>li>a.active{
     .sabor-texto{
         margin: 1.5625rem 0% 0% 0%;
         width: 100%;
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width:480px){
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .logo{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .logo>a>img{
+        margin: .9375rem 0 0 0;
+    }
+    .navbar{
+        background-color: white;
+        padding: 0 5% 0 5%;
+        display: flex;
+        justify-content: center;
+        margin-right: 0px;
+        margin-top: 0px;
+        margin-left: 0px;
+        width: 100%;
+    }
+    .navbar-buttons{
+        font-size: 16px;
+        padding-bottom: .625rem;
+        padding-left: 0px;
+        padding-right: 10px;
+        gap: 15px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .carritoImg{
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .carritoImg>img{
+        width: 1.875rem;
+    }
+    .contador-carrito{
+        display: none;
+    }
+    .contenedor-main{
+        flex-direction: column;
+    }
+    .tequenos-imagen{
+        width: 80%;
+    }
+    .video-nosotros{
+        width: 90%;
+    }
+    .contacto{
+        padding: 25px 0 0 0;
+        margin: 0 0 0 0;
+    }
+    .contacto>h4{
+        margin: 0 0 0 0;
+        font-size: 3.125rem;
+        text-shadow: none;
+    }
+    .contactanos{
+        flex-direction: column;
+        margin: 3.125rem 0 0 0;
+    }
+    .contactanos>p{
+        font-size: 1.875rem;
+        text-align: center;
+        margin: 0 0 0 0;
+    }
+    .despacho{
+        margin: 0 0 0 0;
+    }
+    .despacho>p{
+        font-size: 1.875rem;
+        text-align: center;
+        margin: 0 0 0 0;
+    }
+    .tequenos-imagen-historia{
+        width: 90%;
+        height: 100%;
+    }
+    .historia-texto{
+        width: 90%;
+    }
+    .tequenos-imagen-sabor{
+        margin-top: 1.25rem;
+        width: 100%;
+        height: 100%;
+        border: #fcd873;
+        border-style: solid;
+        border-width: 8px;
+        border-radius: 10px;
+    }
+    .nosotros>h4{
+        margin-top: 50%;
+    }
+
+    .descubre-sabor{
+        display: none;
+    }
+    .redes-sociales{
+        width: 100%;
+        margin: .625rem 0 .9375rem 0;
+        justify-content: center;
+        gap: 25px;
+    }
+    .redes-sociales>img{
+        margin: 0 0 0 0;
     }
 }
