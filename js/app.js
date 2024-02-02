@@ -34,7 +34,7 @@ window.onscroll = () => {
         contenido.className = "tiendaCard"
         contenido.innerHTML = `
         <img class="productImg" src="${album.img}">
-        <h3>${album.nombre}</h3>
+        <h3 class="nombre">${album.nombre}</h3>
         <p class="artista">${album.artista}<p>
         <p class="precio">$${album.precio}</p>
         `;
@@ -44,7 +44,8 @@ window.onscroll = () => {
 // Boton para añadir productos al carrito
         let botonCompra = document.createElement("button");
         botonCompra.className = "botonCarrito"
-        botonCompra.innerText = "Agregar al carrito";
+        botonCompra.innerText = "COMPRAR"
+        botonCompra.setAttribute("id", "checkout-btn");
 
         contenido.append(botonCompra);
 

@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title> 
+
+    // SDK MercadoPago.js
+<script src="https://sdk.mercadopago.com/js/v2"></script>
+
+    <title>Tequeños La Delicia</title> 
 <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,6 +29,7 @@
             <ul class="navbar-buttons">
                 <li><a href="#historia">Historia</a></li>
                 <li><a href="#sabor">Sabor</a></li>
+                <li><a href="#productos">Productos</a></li>
                 <li><a href="#nosotros">Nosotros</a></li>
                 <li><a href="#clientes">Clientes</a></li>
             </ul>
@@ -41,7 +46,7 @@
         <section class="contenedor-main">
         <div class="contenedor-button">
             <img class="tequenos-imagen" src="./assets/img/logo.png" alt="">
-            <a href="./pages/productos.html">
+            <a href="#productos">
                 <button class="descubre-btn">
                     DESCUBRE
                 </button>
@@ -84,14 +89,14 @@
 
 
 <!-- VARIEDADES -->
-    <!-- <section id="variedades" class="variedades">
-        <h4>Conoce nuestras <br> variedades</h4>
-        <div>
-        <img class="tequeños-imagen-historia" src="./assets/img/tequenos-imagen-historia.JPG" alt="">
-        <img class="tequeños-imagen-historia" src="./assets/img/tequenos-imagen-historia.JPG" alt="">
-        <img class="tequeños-imagen-historia" src="./assets/img/tequenos-imagen-historia.JPG" alt="">
-        </div>
-    </section> -->
+<section id="productos" class="tienda">
+    <h4>Productos</h4>
+<div id="contenidoTienda" class="contenido-tienda"></div>
+
+<div id="wallet_container"></div>
+
+<div id="carritoContenedor" class="carrito-contenedor"></div>
+</section>
 
 
 <!-- NOSOTROS -->
@@ -128,6 +133,7 @@
     </footer>
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="./js/mercadopago.js"></script>
 <script src="./js/productos.js"></script>
 <script src="./js/clientes.js"></script>
 <script src="./js/carrito.js"></script>
